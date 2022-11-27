@@ -1,10 +1,18 @@
 {% extends "pages/base.html" %}
 
-{% block title %}
-Home
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h3>Xin Chào, Đây là home app</h3>
+<p>Tên: Lê Bảo Châu</p>
+<p>Năm: 1997</p>
+<p>Trường: Đại học sư phạm kỹ thuật Tp.HCM</p>  
 {% endblock %}
 
-{% block xyz %}
-<h1>Xin Chào HNV</h1>
-Đây là app home  
-{% endblock %}
+{% block sidebar %}
+<ul class="nav flex-column">
+    <li><a href="/">Thông tin cá nhân</a></li>
+    <li><a href="/blog">Bài viết</a></li>
+    <li><a href="/contact">Liên hệ</a></li>
+</ul>
+{%endblock%}
