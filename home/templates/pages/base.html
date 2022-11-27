@@ -3,8 +3,7 @@
 
 <head>
    <style>
-      html,
-      body {
+      html,body {
          height: 100%;
          background-color: #ffffff;
       }
@@ -24,7 +23,11 @@
             <center><img src="{% static 'images/L.png' %}" alt="Error to load image" class="responsive-img"
                   style="max-height:150px" />
             </center>
-            {% block sidebar %} {% endblock %}
+            <ul class="nav flex-column">
+               <li><a href="/">Thông tin cá nhân</a></li>
+               <li><a href="/blog">Bài viết</a></li>
+               <li><a href="/contact">Liên hệ</a></li>
+           </ul>
          </div>
 
          <div class="col-sm-10">
